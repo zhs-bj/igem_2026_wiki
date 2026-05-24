@@ -35,7 +35,7 @@ jobs:
       - name: Build for GitHub Pages
         run: |
           # Temporarily change base path for GitHub Pages
-          sed -i 's|base: "/fudan/"|base: "/igem_2026_wiki/"|' .vitepress/config.mts
+          sed -i "s|base: '/fudan/'|base: '/igem_2026_wiki/'|" .vitepress/config.mts
           npm run docs:build
 
       - name: Upload artifact
